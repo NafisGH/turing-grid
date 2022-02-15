@@ -1,0 +1,99 @@
+body {
+    display: grid;
+}
+
+.container {
+    display: grid;
+    background-color: #fff;
+    width: 1000px;
+    height: 600px;
+    border: 1px solid black;
+    grid-template-rows: repeat(3, 180px);
+    grid-template-columns: repeat(4, 230px);
+    /* gap: 5px; */
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+.container > div {
+    background-color: rgb(216, 211, 211);
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10 {
+    display: grid;
+    align-content: space-evenly;
+}
+/* .box1 > div {
+    margin-left: 25px;
+} */
+[class^="fotos"] {
+    margin-left: 25px;
+}
+[class^="text"] {
+    margin-left: 25px;
+}
+[class^="save"] {
+    margin-left: 25px;
+}
+.box9 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.box10 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+
+.container_3 {
+    display: grid;
+    background-color: #fff;
+    width: 1000px;
+    height: 600px;
+    border: 1px solid black;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: 
+    "A A B B C C"
+    "A A B B C C"
+    "D D D D E E"
+    "D D D D E E"
+    "F F F F E E"
+    "F F F F E E";
+
+}
+.container_3 > div {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-size: 40px;
+}
+.item1 {
+    grid-area: A;
+    background-color: blue;
+    margin: 5px;
+}
+.item2{
+    grid-area: B;
+    background-color: blue;
+    margin: 5px;
+}
+.item3 {
+    grid-area: C;
+    background-color: blue;
+    margin: 5px;
+}
+.item4 {
+    grid-area: D;
+    background-color: blue;
+    margin: 5px;
+}
+.item5 {
+    grid-area: E;
+    background-color: blue;
+    margin: 5px;
+}
+.item6 {
+    grid-area: F;
+    background-color: blue;
+    margin: 5px;
+}
