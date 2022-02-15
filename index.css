@@ -74,12 +74,12 @@ body {
 }
 .item2{
     grid-area: B;
-    background-color: blue;
+    background-color: rgb(162, 238, 128);
     margin: 5px;
 }
 .item3 {
     grid-area: C;
-    background-color: blue;
+    background-color: rgb(182, 241, 20);
     margin: 5px;
 }
 .item4 {
@@ -89,11 +89,11 @@ body {
 }
 .item5 {
     grid-area: E;
-    background-color: blue;
+    background-color: rgb(0, 217, 255);
     margin: 5px;
 }
 .item6 {
     grid-area: F;
-    background-color: blue;
+    background-color: rgb(255, 0, 200);
     margin: 5px;
 }
