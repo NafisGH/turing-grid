@@ -1,0 +1,171 @@
+.body {
+    display: grid;
+}
+
+@media (min-width: 1024px) {
+    .container {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        background-color: #fff;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: 
+        "A A B B B B"
+        "C C C C C C"
+        "D D D . E E"
+        "D D D . F F"
+        "G G G G G G";
+    }
+    .container > div {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .HEADER {
+        grid-area: A;
+        background-color: black;
+        color: white;
+    }
+    .MENU {
+        grid-area: B;
+        background-color: red;
+        color: white;
+    }
+    .HERO {
+        grid-area: C;
+        background-color: blue;
+        color: white;
+    }
+    .MAIN {
+        grid-area: D;
+        background-color: black;
+        color: white;
+    }
+    .IMAGE {
+        grid-area: E;
+        background-color: rgb(137, 238, 245);
+    }
+    .EXTRA {
+        grid-area: F;
+        background-color: green;
+    }
+    .BANNER {
+        grid-area: G;
+        background-color: orange;
+    }
+} 
+
+@media (max-width: 1023px) and (min-width: 424px) {
+    .container {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        background-color: #fff;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: 
+        "A A A A A A "
+        "C C C C C C"
+        "B B D D D D"
+        "B B G G G G"
+        "B B F F E E";
+    }
+    .container > div {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .HEADER {
+        grid-area: A;
+        background-color: black;
+        color: white;
+    }
+    .MENU {
+        grid-area: B;
+        background-color: red;
+        color: white;
+    }
+    .HERO {
+        grid-area: C;
+        background-color: blue;
+        color: white;
+    }
+    .MAIN {
+        grid-area: D;
+        background-color: black;
+        color: white;
+    }
+    .IMAGE {
+        grid-area: E;
+        background-color: rgb(137, 238, 245);
+    }
+    .EXTRA {
+        grid-area: F;
+        background-color: green;
+    }
+    .BANNER {
+        grid-area: G;
+        background-color: orange;
+    }
+}
+
+@media (max-width: 423px) {
+    .container {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        background-color: #fff;
+        grid-template-rows: repeat(7, 1fr);
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: 
+        "A A A A A A "
+        "B B B B B B"
+        "C C C C C C"
+        "D D D D D D"
+        "G G G G G G"
+        "F F F F F F"
+        "E E E E E E";
+    }
+    .container > div {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .HEADER {
+        grid-area: A;
+        background-color: black;
+        color: white;
+    }
+    .MENU {
+        grid-area: B;
+        background-color: red;
+        color: white;
+    }
+    .HERO {
+        grid-area: C;
+        background-color: blue;
+        color: white;
+    }
+    .MAIN {
+        grid-area: D;
+        background-color: black;
+        color: white;
+    }
+    .IMAGE {
+        grid-area: E;
+        background-color: rgb(137, 238, 245);
+    }
+    .EXTRA {
+        grid-area: F;
+        background-color: green;
+    }
+    .BANNER {
+        grid-area: G;
+        background-color: orange;
+    }
+}
+}
